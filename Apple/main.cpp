@@ -21,6 +21,13 @@ public:
         os = os;
         cost = cost;
     }
+    
+    bool isExpensive() {
+        if (cost >= "500$") {
+            return false;
+        }
+        return true;
+    }
 };
 
 
@@ -31,6 +38,7 @@ int main() {
     
     cout << apple1.name << endl;
     cout << apple2.os << endl;
+    cout << apple1.isExpensive();
     
     return 0;
 }
