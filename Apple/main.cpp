@@ -15,19 +15,22 @@ public:
     string name;
     string os;
     string cost;
+    
+    Apple(string name, string os, string cost) {
+        name = name;
+        os = os;
+        cost = cost;
+    }
 };
 
 
 int main() {
     
-    Apple apple1;
-    apple1.name = "iPhone";
-    apple1.os = "iOS";
-    apple1.cost = "450$";
+    Apple apple1("iP", "iOS", "450$");
+    Apple apple2("iMac", "macOS", "900$");
     
     cout << apple1.name << endl;
-    cout << apple1.os << endl;
-    cout << apple1.cost << endl;
+    cout << apple2.os << endl;
     
     return 0;
 }
